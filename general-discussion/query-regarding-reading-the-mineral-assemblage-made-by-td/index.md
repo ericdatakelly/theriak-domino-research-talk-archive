@@ -17,6 +17,7 @@ I am beginner in Theriak-Domino. I got the attached diagram after running the so
 
 Sorry the file was unable to attach here so I pasted it here only:-
 
+```
 1):  ILM FSP2 BIOTITE WHITE MICA CHL4 Rt Sph aQz H2O = ILM FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O
 2):  ILM FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O = ILM FSP2 BIOTITE WHITE MICA CHL4 aQz H2O
 3):  ILM FSP2 BIOTITE WHITE MICA CHL4 aQz H2O = ILM FSP2 BIOTITE WHITE MICA STAU CHL4 aQz H2O
@@ -132,7 +133,7 @@ Sorry the file was unable to attach here so I pasted it here only:-
 113):  GARNET FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O = GARNET FSP2 BIOTITE WHITE MICA STAU Rt aQz H2O
 114):  ILM GARNET FSP2 BIOTITE WHITE MICA STAU CHL4 aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA STAU aQz H2O
 115):  ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA STAU CHL4 aQz H2O
-
+```
 ---
 
 ## zarun4638
@@ -142,6 +143,7 @@ Dear
 
 I am a beginner in the Theriak-Domino programme. How do we read the assemblage from the attached diagram? If I want to read the assemblages marked with the vertical box. What would it be from the following? please suggest.
 
+```
 1):  ILM FSP2 BIOTITE WHITE MICA CHL4 Rt Sph aQz H2O = ILM FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O
 2):  ILM FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O = ILM FSP2 BIOTITE WHITE MICA CHL4 aQz H2O
 3):  ILM FSP2 BIOTITE WHITE MICA CHL4 aQz H2O = ILM FSP2 BIOTITE WHITE MICA STAU CHL4 aQz H2O
@@ -257,6 +259,7 @@ I am a beginner in the Theriak-Domino programme. How do we read the assemblage f
 113):  GARNET FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O = GARNET FSP2 BIOTITE WHITE MICA STAU Rt aQz H2O
 114):  ILM GARNET FSP2 BIOTITE WHITE MICA STAU CHL4 aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA STAU aQz H2O
 115):  ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA STAU CHL4 aQz H2O
+```
 
 ![Untitled-1.png]({{ '/assets/attachments/60_Untitled-1.png' | relative_url }})
 
@@ -269,17 +272,22 @@ its simple
 **way 1:**
 find bounding reaction (minimum two) - no 11, 32, 34...
 find equivalent part in reaction - this mineral assemblage inside bounds
+```
 11): ILM FSP2 BIOTITE WHITE MICA CHL4 aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 aQz H2O
 32): ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA STAU aQz H2O
 34): ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 Rt aQz H2O
 68): ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 Sph aQz H2O = ILM GARNET FSP2 BIOTITE WHITE MICA CHL4 aQz H2O
 assemblage mark yellow
+```
 
 **way 2:**
 corrected your file therin.txt
 write 
+
+```
 560 6600
 1  SI(70.21) AL(11.77) FE(5.36) MG(5.83) CA(0.93) NA(1.44) K(3.53) O(?) H(20) TI(0.65)   * BULK
+```
 
 first line - approx PT center area of interest
 run theriak

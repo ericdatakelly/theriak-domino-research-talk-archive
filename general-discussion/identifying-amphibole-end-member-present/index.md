@@ -15,6 +15,7 @@ Hi,
 
 I'm trying to determine the orthoamphibole end member represented in different sectors of my pseudosection but when I use theriak to do a spot check, it says the end member is "a3" or "b3" and I don't understand which end member this refers to. According to my database (tcds55_m11), these are the different end members possible:
 
+```
 OAMP11    (-SITE,MARGULES)1/2    A(2):v,Na - M4(4):Ca,Na,Mg,Fe - M13(6):Mg,Fe - M2(4):Al,F3,Mg,Fe - T1(2):Al,Si
 anth             v,v - Mg,Mg,Mg,Mg - Mg,Mg,Mg,Mg,Mg,Mg - Mg,Mg,Mg,Mg - Si,Si       1  0  0  0
 ged2             v,v - Mg,Mg,Mg,Mg - Mg,Mg,Mg,Mg,Mg,Mg - Al,Al,Al,Al - Al,Si       1.5  0  0  0
@@ -25,6 +26,7 @@ fanth2           v,v - Fe,Fe,Fe,Fe - Fe,Fe,Fe,Fe,Fe,Fe - Fe,Fe,Fe,Fe - Si,Si    
 omrb1            v,v - Na,Na,Na,Na - Mg,Mg,Mg,Mg,Mg,Mg - F3,F3,F3,F3 - Si,Si       0.8  0  0  0
 a3               v,v - Fe,Fe,Fe,Fe - Mg,Mg,Mg,Mg,Mg,Mg - Fe,Fe,Fe,Fe - Si,Si       1  0  0  0
 b3               v,v - Fe,Fe,Fe,Fe - Fe,Fe,Fe,Fe,Fe,Fe - Mg,Mg,Mg,Mg - Si,Si       1  0  0  0
+```
 
 If anyone could provide clarification on this I would appreciate it a lot! Thank you.
 

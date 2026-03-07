@@ -41,24 +41,30 @@ here I will explain how to define a ΔQFM+1 or ΔQFM-1 buffer.
 
 Gibbs free energy of the new buffer is:
 
+```
 G(qfm+X) = G(qfm) + 2.303*R*T*X
 [2.303log() = ln() ]
+```
 
 X= number of displacment in log10 units =  QFM+X;
 
-because: S(qfm+2) = -RT*[ln(a)+2.303*2] = - RT*2.303*[log(a)+2] = S(qfm) + RT*2.303*2
+because: `S(qfm+2) = -RT*[ln(a)+2.303*2] = - RT*2.303*[log(a)+2] = S(qfm) + RT*2.303*2`
 
 this can be specified by the COM definition
 
+```
 G(qfm) = G(2 mt) + G(3 q) -G(3 fa)
 
 G_add = G(qfm) + 2.303*R*X* T (in K)
+```
 
 For instance QFM+2:
 
+```
 2.303*X*R
 
 2.303*2*8.3143=38.296
+```
 
 In JUN92:
 

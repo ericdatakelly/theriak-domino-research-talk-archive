@@ -30,6 +30,7 @@ I attached a few lines of the OUT data and ps file.
 Thanks,
 Byeongjun Park
 
+```
 MN(0.126)NA(3.652)CA(1.303)K(5.388)FE(6.558)MG(5.854)AL(22.708)SI(69.377)TI(0.678)H(30)O(?) O(0.59022)
 Bulk composition: O         208.123220
 SI         69.377000
@@ -155,6 +156,7 @@ REACTION: (2)PLC BI14 CD14 MTLOW ILM00 H2O and q ru = (2)PLC BI14 CD14 MTLOW ILM
 REACTION:  18  18  =   4
 position:      5.72207E+02   1.00000E+03      5.72266E+02   1.00000E+03
 LABELED WITH ASSEMBLAGES
+```
 
 ![화면 캡처 2021-10-05 124137.jpg]({{ '/assets/attachments/48_화면_캡처_2021-10-05_124137.jpg' | relative_url }})
 

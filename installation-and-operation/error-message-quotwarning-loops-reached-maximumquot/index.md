@@ -27,8 +27,8 @@ Caio
 
 PS: for some reason I am not able to attach the DomOut and Domplt files, but I can send it via some other channel, if necessary. The two compositions I mentioned are given below.
 
-Mafic composition: SI(52.94)TI(1.33)AL(18.17)FE(9.02)MG(11.85)CA(12.8)NA(5.67)K(0.21)CR(0.03)H(1.01)O(?)O(0.48)
-Ultramafic composition: SI(37.49)TI(0.08)AL(2.05)FE(5.87)MG(53.37)CA(1.74)NA(0.44)K(0.06)CR(0.3)H(0.2)O(?)O(0.09)
+Mafic composition: `SI(52.94)TI(1.33)AL(18.17)FE(9.02)MG(11.85)CA(12.8)NA(5.67)K(0.21)CR(0.03)H(1.01)O(?)O(0.48)`
+Ultramafic composition: `SI(37.49)TI(0.08)AL(2.05)FE(5.87)MG(53.37)CA(1.74)NA(0.44)K(0.06)CR(0.3)H(0.2)O(?)O(0.09)`
 
 ---
 

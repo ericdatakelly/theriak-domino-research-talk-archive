@@ -38,12 +38,14 @@ Hi Blakelee,
 
 Thanks for the response. Below are my calculations (bulk+THERIN input; it wasn't letting me attach the .xls file I had it on). I have added Qz and H2O to the calculation, as Qz was texturally stable throughout the history of the sample, as was white mica. I also tried to do the calculations on another HP metapelite and got the same floating K. Unfortunately, calculations take ~12 hrs.
 
+```
 SiO2	        TiO2     Al2O3	FeO*	     MnO	     MgO	CaO	  Na2O	K2O	  Total
 56.41	0.9	    21.61	7.86	     0.141	     2.32	1.3	  2.07	3.98	  96.591
 
 THERIN Input										                                                               +Qz+H2O			
 Si	        Ti	        Al	        Fe	        Mn	        Mg	        Ca	        Na	        K	        O	        H	O	Si	O
 55.019	0.660	24.839	5.769	0.116	3.373	1.358	3.914	4.952	163.665	60	30	30	60
+```
 
 Any suggestions you have would be greatly appreciated.
 
@@ -57,7 +59,7 @@ William
 
 Hi Will,
 Sorry for my late response! I use your bulk info: 
-0  MN(0.116)NA(3.914)CA(1.358)K(4.952)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)H(60)SI(30)O(?)   *  as input file and run Theriak.exe randomly to check the output results, it seems everything goes well and i havn't find a 'K' phase as you said.
+`0  MN(0.116)NA(3.914)CA(1.358)K(4.952)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)H(60)SI(30)O(?)   * ` as input file and run Theriak.exe randomly to check the output results, it seems everything goes well and i havn't find a 'K' phase as you said.
 
 With best regards,
 Blakelee
@@ -84,8 +86,8 @@ I have checked further and now i am sure that the right O vaule should be 163.66
 
 ![2021-07-02_234839.jpg]({{ '/assets/attachments/39_2021-07-02_234839.jpg' | relative_url }})
 
-PS: The left input is 0  MN(0.116)NA(3.914)CA(1.358)K(4.952)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)H(60)SI(30)O(?)   * 
-while the right is 0  MN(0.116)NA(3.914)CA(1.358)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)K(4.952)O(163.6655)H(60)O(30)SI(30)O(60)   *
+PS: The left input is `0  MN(0.116)NA(3.914)CA(1.358)K(4.952)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)H(60)SI(30)O(?)   * `
+while the right is `0  MN(0.116)NA(3.914)CA(1.358)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)K(4.952)O(163.6655)H(60)O(30)SI(30)O(60)   *`
 
 Kind regards,
 Blakelee
@@ -97,7 +99,7 @@ Blakelee
 
 Hi Blakelee,
 
-Thanks again for all the help. I wasn't aware that the order of the elements on the THERIN input affected the outcome of the results. I tried the first input you listed (0 MN(0.116)NA(3.914)CA(1.358)K(4.952)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)H(60)SI(30)O(?) *) and unfortunately got the diagram attached, which is a very common result of mine. I will try it again with a specified 'O' input of 163.6655. Thanks again for all the help.
+Thanks again for all the help. I wasn't aware that the order of the elements on the THERIN input affected the outcome of the results. I tried the first input you listed (`0 MN(0.116)NA(3.914)CA(1.358)K(4.952)FE(5.769)MG(3.373)AL(24.839)SI(55.019)TI(0.660)H(60)SI(30)O(?) *`) and unfortunately got the diagram attached, which is a very common result of mine. I will try it again with a specified 'O' input of 163.6655. Thanks again for all the help.
 
 All the best,
 William

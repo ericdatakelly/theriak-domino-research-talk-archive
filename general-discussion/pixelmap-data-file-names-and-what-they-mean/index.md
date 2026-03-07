@@ -48,9 +48,11 @@ so in your case x_a_b means (I think) the molar fraction of end member a in an a
 
 a and b are (accordint to the solution model in the database):
 
+```
 a             v,v - Mg,Mg,Mg,Mg,Mg,Mg - Fe,Fe,Fe,Fe - Fe,Fe,Fe,Fe - Si,Si - OH,OH,OH,OH    1       0       0       0
 
 b             v,v - Fe,Fe,Fe,Fe,Fe,Fe - Mg,Mg,Mg,Mg - Fe,Fe,Fe,Fe - Si,Si - OH,OH,OH,OH    1       0       0       0
+```
 
 What I would like to know is:
 

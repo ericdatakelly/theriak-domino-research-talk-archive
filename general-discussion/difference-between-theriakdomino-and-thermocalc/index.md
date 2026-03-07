@@ -12,11 +12,7 @@ original_url: "https://research-talk.org/viewtopic.php?t=45"
 *2019-04-04 09:25 UTC*
 
 To compare the results of TheriakDomino 2019 + tcds62c and Thermocalc 3.45 + tc-ds62.txt + tc-6axNCKFMASHTOm45.txt, I calculated P-T pseudosections for a metabasite 
-(The bulk composition is 
-```
-SI(54.922)AL(7.913)AL(7.913)CA(11.465)MG(8.523)FE(11.240)K(0.691)K(0.691)NA(3.975)NA(3.975)MN(0.031)H(80)O(210.748)
-```
-). 
+(The bulk composition is `SI(54.922)AL(7.913)AL(7.913)CA(11.465)MG(8.523)FE(11.240)K(0.691)K(0.691)NA(3.975)NA(3.975)MN(0.031)H(80)O(210.748)`). 
 I found that in the P-T pseudosections, the stabilities of most assemblages are consistent between TheriakDomino and Thermocalc. However, the stablilities of quartz-bearing assemblages are different with each other, especially, the transition between coesite and quartz (Please go to the download link, <http://www.yourfilelink.com/get.php?fid=1958632>). For the trainsition of coesite and quartz, the results of Theriak/Domino 2019 + tcdb55c2d and Thermocalc 3.33 + tc-ds55s.txt, however, are consistent with each other. I wonder how the difference developed and how to cover it.
 
 The thermodynamic data of coesitie and quartz are,

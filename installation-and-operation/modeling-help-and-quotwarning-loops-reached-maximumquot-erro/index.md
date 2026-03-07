@@ -15,7 +15,7 @@ Hello,
 
 I am also getting this error except it is "WARNING: loops reached maximum:251". I've used different databases and tried a variety of different things but not sure what the issue is.
 
-I am trying to model this metapelite from my sample area, my stable mineral assemblage is (Pl+Chl+Ctd+Ms+Qz) and I'm using td-ds62-mp50-05 database, bulk composition of Bulk(1)= SI(5.199)AL(2.872)FE(0.964)MN(0.006)MG(0.235)CA(0.013)NA(0.099)K(0.613)O(?)O(0.01)H(60). With GRT,FSP4TR, ABHGP,PLC,PLI,EP11,MRG,WM,BI14,CD14,ST14,CHL14,CTD14 activity models turned (minerals you'd expect to find in a metapelite. I have run multiple models at varying P-T conditions trying to find a field with my mineral assemblage, after numerous attempts I found that it lies ~400C and 100Bar, which seems extremely unlikely given the geology I know about the area (note; "Loops reached maximum" error was present in every model run I did). Am I missing something here or looking at it/doing something wrong? If anyone has any insight i'd appreciate it! If more information is needed i'd be happy to provide it.
+I am trying to model this metapelite from my sample area, my stable mineral assemblage is (Pl+Chl+Ctd+Ms+Qz) and I'm using td-ds62-mp50-05 database, bulk composition of `Bulk(1)= SI(5.199)AL(2.872)FE(0.964)MN(0.006)MG(0.235)CA(0.013)NA(0.099)K(0.613)O(?)O(0.01)H(60)`. With `GRT,FSP4TR, ABHGP,PLC,PLI,EP11,MRG,WM,BI14,CD14,ST14,CHL14,CTD14` activity models turned (minerals you'd expect to find in a metapelite. I have run multiple models at varying P-T conditions trying to find a field with my mineral assemblage, after numerous attempts I found that it lies ~400C and 100Bar, which seems extremely unlikely given the geology I know about the area (note; "Loops reached maximum" error was present in every model run I did). Am I missing something here or looking at it/doing something wrong? If anyone has any insight i'd appreciate it! If more information is needed i'd be happy to provide it.
 
 Thank you! Happy holidays!
 
@@ -36,6 +36,8 @@ I attach the 2 diagrams.
 I can't attach the 2 tables with the labelled reactions, so here they are:
 
 Keanu_data reactions:
+
+```
 1):  FSP4TR WM CHL14 H2O q = FSP4TR WM BI14 CHL14 H2O q
 2):  FSP4TR WM BI14 CHL14 H2O q = FSP4TR WM BI14 CHL14 H2O and q
 3):  FSP4TR WM BI14 CHL14 H2O and q = FSP4TR WM BI14 H2O and q
@@ -202,6 +204,7 @@ Keanu_data_noMn reactions:
 75):  EP11 WM CHL14 CTD14 H2O q = EP11 MRG WM CHL14 H2O q
 76):  MRG WM CHL14 H2O q = GRT MRG WM CHL14 CTD14 H2O q
 77):  GRT WM BI14 ST14 CHL14 H2O q = GRT FSP4TR WM BI14 ST14 H2O q
+```
 
 Let me know if I can help with anything else.
 

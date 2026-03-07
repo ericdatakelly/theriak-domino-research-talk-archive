@@ -17,6 +17,7 @@ I am new to Theriak-Domino and try to recalculate the diagrams in de Capitani (2
 
 I tried different ways to input the corresponding phase and data, but none of them worked.The Inputs and results are as follows:
 
+```
 (Name       Key    Nr    min     max      step)
 
 1. Muscovite   Si      1      3          3.4        0.04  ------got no line in the diagram
@@ -32,6 +33,7 @@ I tried different ways to input the corresponding phase and data, but none of th
 For comparison, I used Al to check if it worked, but still got nothing.
 
 6. Muscovite  Al       2      0.6        1         0.04  ------got no line in the diagram 
+```
 
 I also used "list" to check the available phases, found that abbrivation Si represented Sillimanite. Maybe this is the reason why no single line could be calculated, but I am not sure. 
 
@@ -74,7 +76,9 @@ Finally I solved the problem. There're two key points in the Input (Name Key Nr 
 
 Thus, the right way to Input for calculating Sipfu of Ms is:
 
+```
 White Mica   sipfu  1   3   3.4    0.04  (Note: The phase is White Mica not Muscovite)
+```
 
 ---
 

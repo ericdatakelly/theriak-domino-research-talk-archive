@@ -29,7 +29,9 @@ Shilin,
 
 Here is T-D input for SM89 MORB with Fe3+/Fetotal = 10% and 10 moles of H2O:		
 
+```
 SI(48.21)AL(16.73)CA(11.23)MG(11.69)FE(7.49)K(0.41)NA(4.81)TI(0.97)H(18.11)O(165.91)
+```
 
 Thanks,
 

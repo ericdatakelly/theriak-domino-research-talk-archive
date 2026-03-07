@@ -14,11 +14,13 @@ original_url: "https://research-talk.org/viewtopic.php?t=105"
 Hello everyone,
 I am currently working on mafic granulitic rocks, using the td-ds62-mb50-v07 dataset downloaded from the theriak-Domino official Github page,  but theriak returns the following message:
 
+```
 FATAL ERROR
 LIQG16     : there is no data for q4L    in internal subroutine
+```
 
 I'm using in Windows 10, Theriak-Domino version 28.05.2022
-therin input : NA(1.16)CA(10.46)K(0.760)FE(14.20)MG(7.45)AL(15.84)SI(50.69)TI(1.72)H(14.00)O(?) O(0.400)
+therin input : `NA(1.16)CA(10.46)K(0.760)FE(14.20)MG(7.45)AL(15.84)SI(50.69)TI(1.72)H(14.00)O(?) O(0.400)`
 
 Could someone help me? In other datasets the program does not return this type of message.
 
@@ -39,6 +41,7 @@ Since you are using an older version of Theriak-Domino than what that file works
 
 If you want to do #2 because you need to use that version of TD, and do not want to recompile, you can adjust the names of the liquid model and end-members in the database file, to see if it works. I cannot guarantee LIQtc2 is the same as LIQG16 without testing it, but it conceptually should be the same if the names are changed. The solution model name is LIQtc62, and phase component names are as follows:
 
+```
 !-----**Liquid. Tonalitic metabasite melt: NCKFMASH. Green et al. 2016**
 IF (SOLNAM.EQ.'LIQtc62') THEN
 N=9
@@ -52,6 +55,7 @@ NAME(7)='Forsterite2_liq'
 NAME(8)='H2O_liq'
 NAME(9)='Anorthite2_liq'
 END IF
+```
 
 Doug
 

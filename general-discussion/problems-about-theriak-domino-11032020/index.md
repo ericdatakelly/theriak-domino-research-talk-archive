@@ -12,7 +12,7 @@ original_url: "https://research-talk.org/viewtopic.php?t=67"
 *2021-01-07 07:43 UTC*
 
 Hi, everyone. Recently, I am trying to calculate P-T pseudosections of eclogites using the latest Theriak/Domino software (11.03.2020). I installed gfortran following the introduction on the web and then I executed the "make all" and I didn't have problems. My computer has Windows 10, (64-bit). I started with the database tcdb55c2d and a bulk rock composition as below,
-"1   SI(53.577)TI(0.866)AL(10.223)AL(10.223)FE(7.935)MN(0.161)MG(12.396)CA(10.802)NA(3.452)NA(3.452)K(0.310)K(0.310)O(0.278)H(80)O(?)        *D911 WEI 2013".
+`1   SI(53.577)TI(0.866)AL(10.223)AL(10.223)FE(7.935)MN(0.161)MG(12.396)CA(10.802)NA(3.452)NA(3.452)K(0.310)K(0.310)O(0.278)H(80)O(?)        *D911 WEI 2013`.
 The result is reasonable and the same as that of an earlier version of TD (09.03.2019) and the calculation is much faster. However, when the database tcd62scid is used, the error appears as, 
 "ZUG TOO SMALL
 Note: The following floating-point exceptions are signalling: IEEE_DENORMAL".

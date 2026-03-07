@@ -14,13 +14,16 @@ original_url: "https://research-talk.org/viewtopic.php?t=79"
 Hello all, I am trying to use the database ds55HP1 to model a metapelitic assemblage with melt 
 When I try to use Theriak or Domino I ran into this problem which says there is a problem with the external subroutine.
 
+```
 FATAL ERROR:
 LIQtc2           :there is no data for Silica8.liq      in external subroutine
+```
 
 I see this database uses LIQtc2, and my fsol file (which I understand manages the external subroutines) only has LIQtc, LIQtc6 and LIQtc6F. I tried to manually change LIQtc, with LIQtc2 in fsol file, but still, the same error remains. Do you know what should I do with this file to fix this problem? I've checked the TD forum and the TD User Guide but I can't find any solution. 
 
 This is a comment that my database has about this:
 
+```
 ! Melt: LIQtc2
 ! Defined: White et al. 2007
 ! References:
@@ -29,6 +32,7 @@ This is a comment that my database has about this:
 !    BMH: NEEDS TESTING. DOES RENAMEING LIQtc2 to LIQtc FIX THE PROBLEM OR CAUSE
 !    THE INCORRECT VERSION OF THE MODEL TO BE USED?
 !=======================================================
+```
 
 I'd appreciate any help!
 

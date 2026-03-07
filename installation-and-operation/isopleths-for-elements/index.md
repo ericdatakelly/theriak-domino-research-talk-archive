@@ -82,7 +82,7 @@ For help with isoline definition type "i" during "definition of calculation type
 
 For this model, Si(T1) = Si-2. Consequently, Si(T1) ranges from 1 to ~1.5. This can be confusing because in KWM you have two T sites with both a multiciplicity of 2. The first one is only filled up by Si as Si ranges between 3 (muscovite) and 4 (celadonite) and the second one by Si and Al.
 
-What you want is the total Si in apfu, so use the command:  PHNG  sipfu  1  3  3.49  0.01
+What you want is the total Si in apfu, so use the command:  `PHNG  sipfu  1  3  3.49  0.01`
 
 Cheers, 
 

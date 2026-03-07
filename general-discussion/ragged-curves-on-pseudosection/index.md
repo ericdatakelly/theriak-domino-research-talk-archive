@@ -63,11 +63,15 @@ Another thing you could do is to run manually a few minimizations with Theriak i
 
 Hi Pierre,thanks for your replay. I'm using the following bulk:
 
+```
 1   SI(66.8367)AL(16.4382)FE(3.1427)MG(3.2363)MN(0.0488)CA(0.5455)NA(6.5557)K(2.7697)TI(0.4264)H(100)O(?)  * 
+```
 
 So, if I understand you I could modify this bulk to:
 
+```
 1   SI(66.8367)AL(16.4382)FE(3.1427)MG(3.2363)MN(0.0488)CA(0.5455)NA(6.5557)K(2.7697)TI(0.4264)H(100)O(?)O(0.001)  * 
+```
 
 Am I right?
 Jacek

@@ -49,7 +49,7 @@ Did you notice that in your THERIN, there's no H component?
 
 Because H2O is excess in your system, you need to include H in your input.
 
-maybe you can try this SI(57.2)TI(2.15)AL(11.5)FE(9.5)NA(3)MG(10.2)CA(13)K(0.8)H(30)O(?)
+maybe you can try this `SI(57.2)TI(2.15)AL(11.5)FE(9.5)NA(3)MG(10.2)CA(13)K(0.8)H(30)O(?)`
 
 ---
 
@@ -88,7 +88,9 @@ Hi all,
 
 I am also getting this same fatal error when trying to use the td-6axNCKFMASHTOm45 database with the 09.03.2019 version of TD:
 
+```
 "LIQMB16          :there is no data for qL1              in external subroutine"
+```
 
 Not sure how to fix this...
 

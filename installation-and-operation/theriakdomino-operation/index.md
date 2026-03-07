@@ -15,6 +15,7 @@ Hello, I am a beginner user of TheriakDomino, and I encountered the following is
 
 1、When I run the makemap program, the following information (no folder with pixel map information found (note that names of pixel map folders begin with "_")) is displayed.  However, the Domino program does create a folder named “_pixelmaps”.
 
+```
 Initialization-file:   /TheriakDominoWIN	heriak.ini
 theriak.ini：
 $MAKEMAP-FILES
@@ -25,6 +26,7 @@ pst=pixel.ps             # Pixel map (PostScript file) (alte unit 20)
 $END
 Program's directory:   D:\Demino\TheriakDominoWIN\
 Working directory:     /TheriakDominoWIN\
+```
 
 2、When using the Theriak program to calculate P-T paths along specific trajectories, I created a ptpath script file, but I encountered the following message（Unable to open unit 12, type drv, file /TheriakDominoWIN\ptpath containing: "Special calculations" directives to run theriak iostat: 21）.
 

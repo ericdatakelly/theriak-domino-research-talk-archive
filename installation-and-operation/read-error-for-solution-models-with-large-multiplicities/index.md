@@ -15,6 +15,7 @@ Dear all,
 
 I have noticed that a solution model with very large site multiplicities are not correctly read and interpreted in Theriak.  Here is an example - serpentine solid solution:
 
+```
 !------------------------------ Serpentine --------------------------------------
 ! Padron-Navarta et al. 2013
 *****  MINERAL DATA  *****
@@ -29,11 +30,13 @@ SERP     (-SITE,IDEAL)4     M0(11):Mg,Fe - M1(1):Mg,Fe,Al - T1(2):Al,Si
 antigorite        Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg - Mg - Si,Si
 fantigorite       Fe,Fe,Fe,Fe,Fe,Fe,Fe,Fe,Fe,Fe,Fe - Fe - Si,Si
 tsantigorite      Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg - Al - Al,Si
+```
 
 Notice that the multiplicities of 44, 4 and 8 are used as 11, 1 and 2, with a factor of 4 beforehand. 
 
 Theriak reads this incorrectly (probably formatting issue or overflow of number of substituting elements?), see the long output:
 
+```
 5  SERP             :            solution model:  "ideal"  3 site mixing                                                          
 info: site mixing                                                                     
 antigorite         [M0]:Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Mg,Fe   [M1]:Mg   [T1]:Si,Si                                                
@@ -57,6 +60,7 @@ X[Si(T1)] ) ** 4.000
 X[Mg(M0)] * X[Mg(M0)] * X[Mg(M0)] * X[Mg(M0)] * X[Mg(M0)] * X[Al(M1)] * X[Al(T1)] *  
 
 X[Si(T1)] ) ** 4.000                                                                  
+```
 
 So, elements are incorrectly read and assigned to sites, consequently the normalization constant for the end-member activity is incorrect and the Gibbs-Duhem test failed.  
 
@@ -79,6 +83,7 @@ I have the following model that I benchmarked against Perple_X in 2019.
 Cheers, 
 Pierre
 
+```
 **** MINERAL DATA ***** 
 antigorite           SI(34)MG(48)O(147)H(62)     atg          48nh
 ST              0.0  -71424920.000      3591.0000       175.4800
@@ -99,6 +104,7 @@ SERP     (-SITE)4   T1(2):Si,Al - M1(1):Mg,Fe,Al - M01(6):Mg,Fe - M02(5):Mg,Fe
 antigorite             Si,Si - Mg - Mg,Mg,Mg,Mg,Mg,Mg - Mg,Mg,Mg,Mg,Mg
 FeAntigorite           Si,Si - Fe - Fe,Fe,Fe,Fe,Fe,Fe - Fe,Fe,Fe,Fe,Fe
 antigoriteTs           Si,Al - Al - Mg,Mg,Mg,Mg,Mg,Mg - Mg,Mg,Mg,Mg,Mg
+```
 
 ---
 
@@ -139,20 +145,22 @@ Dear Pierre and dolejs,
 Prof. Pierre is right, i once asked Prof. de Capitani the same question and he explained this as follows:
 " With the THERMOCALC database it becomes clear, that the "-" is needed.
 DQF has three parameters a,b, and c.
-The correction is a + b*T + c*P (1)          (note the plus)
+The correction is `a + b*T + c*P` (1)          (note the plus)
 where a is in [KJ/mol], b in [KJ/mol/degree] and c in[KJ/mol/KBar]
 T is in [degree] and P in [KBar]
 
 the ST line in Theriak has four parameters G0, H0, S0 and V0 (G0is not usually used)
-the formula is H0 - S0*T + V0*P (2)            (note the minus)
+the formula is `H0 - S0*T + V0*P` (2)            (note the minus)
 where H0 is in [J/mol], S0 in [J/mol/degree] and V0 in [J/Bar]
 T is in [degree] and P in [Bar]
 
 Comparing (1) and (2) :
+```
 H0 = a*1000
 S0 = -b*1000
 V0 =  c
-"
+```
+
 Kind regards,
 Blakelee, PHD student
 
@@ -163,7 +171,7 @@ Blakelee, PHD student
 
 Dear Pierre & Blakelee,
 
-yes, Pierre is right, the sign convention is reversed.  Checking the Gibbs energy values in both codes with +46.1 vs. -46.1 in the end-member definition shows that "make" in Perplex/Frendly uses G = ... + T * value, whereas the "ST" in Theriak uses G = ... - T * value. 
+yes, Pierre is right, the sign convention is reversed.  Checking the Gibbs energy values in both codes with +46.1 vs. -46.1 in the end-member definition shows that "make" in Perplex/Frendly uses `G = ... + T * value`, whereas the "ST" in Theriak uses `G = ... - T * value`. 
 
 The reason for my comment to Pierre yesterday was that the paper by Navarta et al. 2013 states: 
 "The entropy of the atgts endmember was raised by 8Rln (2) to account for the configurational entropy of Al and Si mixing in T1.", which automatically lead me to assume that the entropy of the defining reaction (from clin, atg and br) should be positive.  Two comments on this:

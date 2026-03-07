@@ -17,7 +17,7 @@ I am currently studying granulitic rocks and I am facing some problems with Ther
 
 - Windows 10, Theriak-Domino version 09.03.2019, dataset td-tcds62-6axmn-03
 
-- therin input SI(61.59)TI(0.00)AL(17.63)FE(4.23)MN(0.00)MG(2.93)CA(1.57)NA(4.47)K(4.21)H(3.37)O(?)O(0.01)
+- therin input `SI(61.59)TI(0.00)AL(17.63)FE(4.23)MN(0.00)MG(2.93)CA(1.57)NA(4.47)K(4.21)H(3.37)O(?)O(0.01)`
 
  
 The problem is: the program is taking too long to calculate a pseudosection, like four to five days, and the results are not understandable (see figure for an example). I've tried using the dataset tcds_55 (with the necessary changes in the therin input file) and the program works just fine  (five to eight hours to generate a pseudosection) and the pseudosections are understandable. 
@@ -45,7 +45,7 @@ SI(61.59)TI(0.00)AL(17.63)FE(4.23)MN(0.00)MG(2.93)CA(1.57)NA(4.47)K(4.21)H(3.37)
 Hi  Arthur Santos,
 
 I suggest you have a try the recently updated version 20201103, which can be available from the URL below: <https://titan.minpet.unibas.ch/minpet/theriak/theruser.html>. I have attained some good results using this version when constructing phase diagrams for a mafic eclogite, so i believe it may be helpful to you as well. 
-In addition, if you want to omit some compositions such as TI and MN, you can just delete them directly in your input datafile. Like this:  SI(61.59)AL(17.63)FE(4.23)MG(2.93)CA(1.57)NA(4.47)K(4.21)H(3.37)O(?)O(0.01)
+In addition, if you want to omit some compositions such as TI and MN, you can just delete them directly in your input datafile. Like this:  `SI(61.59)AL(17.63)FE(4.23)MG(2.93)CA(1.57)NA(4.47)K(4.21)H(3.37)O(?)O(0.01)`
 
 Best wishes,
 Blakelee, PHD student
@@ -56,7 +56,7 @@ Blakelee, PHD student
 *2021-11-01 14:07 UTC*
 
 Hello Everybody,
-I'm facing the same problem as Arthur Santos. I have commented/deactivated all ferric-bearing members of solution models in the database file td-ds62-mp50-03.txt. The bulk composition I'm using in calculations is SI(67.8700490)AL(15.7718330)FE(3.30293480)MG(2.74972460)MN(0.0250987700)CA(0.948191340)NA(5.72520000)K(3.04340000)TI(0.441400000)H(100.000000)O(?)
+I'm facing the same problem as Arthur Santos. I have commented/deactivated all ferric-bearing members of solution models in the database file td-ds62-mp50-03.txt. The bulk composition I'm using in calculations is `SI(67.8700490)AL(15.7718330)FE(3.30293480)MG(2.74972460)MN(0.0250987700)CA(0.948191340)NA(5.72520000)K(3.04340000)TI(0.441400000)H(100.000000)O(?)`
 Does anyone know what to do to solve this problem?
 Best,
 Jacek
@@ -82,7 +82,10 @@ Regards,
 Doug
 
 If you wanted FeO1.5/(FeO+FeO1.5) = 0.06, your bulk compo to 3 dec digits would be entered:
+
+```
 0  SI(67.870)AL(15.772)FE(3.303)MG(2.750)MN(0.025)CA(0.948)NA(5.725)K(3.043)TI(0.441)H(100.000)O(?)O(0.099)  *  js TD Forum
+```
 
 ---
 
@@ -92,7 +95,10 @@ If you wanted FeO1.5/(FeO+FeO1.5) = 0.06, your bulk compo to 3 dec digits would 
 Dear Doug,
 thank you for your answer. It is a pity that I noticed it so late. So, now I'm working on another sample. The particular sample from the last question I worked out using the old tcds55 database. However, I'm still facing the same problem working with other samples using the new database. The bulk-rock composition I'm using in my calculations does not contain any ferric iron as I want to work on ferric-iron free composition. I also deactivated all the ferric-bearing members in the database. However, as you can see in the diagram (attached) there are still a bunch of jagged lines present. Is there anything else that I can do to get rid of the issue?
 The bulk composition I'm using is
+
+```
 1   SI(67.5938)AL(15.5877)FE(3.1352)MG(2.7257)MN(0.0052)CA(0.8836)NA(5.7252)K(3.0434)TI(0.4414)H(100.0000)O(?)  *   24
+```
 
 Best,
 Jacek

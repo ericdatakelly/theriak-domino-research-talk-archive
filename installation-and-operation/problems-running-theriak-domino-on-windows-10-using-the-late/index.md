@@ -16,7 +16,7 @@ Dear all,
 I’m interested in using the program Theriak-Domino to do some calculations for metabasic granulites. Unfortunately, I’m having some trouble making it work on my computer (I have a notebook that works with Windows 10) when I use the latest database from Holland and Powell (those that contain the mineral datasets from Green et al., 2016). I have tried to use both archives from the Theriak-Domino website (tcds62cid) and the one from Doulg Tinkham's website (td-6axNCKFMASHTOm45). Unfortunately, both seem not to work.
 
 In my calculations, I’m using the MnNCKFMASHO system. The images that I added here were taken from a run that I did using the following input:
-SI(41.06)TI(0.38)AL(9.79)FE(6.96)MN(0.13)MG(17.89)CA(12.21)NA(2.71)K(0.32)H(8.53)O(?)     *
+`SI(41.06)TI(0.38)AL(9.79)FE(6.96)MN(0.13)MG(17.89)CA(12.21)NA(2.71)K(0.32)H(8.53)O(?)     *`
 
 Every time I use this input and the latest dataset in Domino, a message appears like in the image below: “WARNING: loops reach maximum”.
 

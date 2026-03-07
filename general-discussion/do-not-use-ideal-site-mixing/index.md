@@ -15,6 +15,7 @@ Dear all
 
 I want to run Domino for a metabasite sample with tcds62c but it shows these warnings:
 
+```
 CHLR             : ideal part of solution model has non-zero activity for zero concentration
 
 the following endmembers may have negative concentrations:  Clinochlore_ord  Alfree-chlorite  Daphnite         ochl4           
@@ -26,6 +27,7 @@ CHLR             : solution is complex, do not use "ideal" site mixing.
 MAG              : ideal part of solution model has non-zero activity for zero concentration
 
 the following endmembers may have negative concentrations:  iMagnetite 
+```
 
 How can I change "ideal site mixing" in dataset?
 
