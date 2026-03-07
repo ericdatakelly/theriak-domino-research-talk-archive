@@ -12,4 +12,4 @@ A static archive of [research-talk.org](https://research-talk.org), the communit
 
 ## About
 
-The forum was active from approximately 2016–2024 and hosted discussions on Theriak-Domino usage, datasets, installation, and petrology workflows. It is now read-only. This archive was generated from a phpBB database export and converted to a Jekyll static site.
+The forum was active from approximately 2015–2026 and hosted discussions on Theriak-Domino usage, datasets, installation, and petrology workflows. It is now read-only. This archive was generated from a phpBB database export and converted to a Jekyll static site.
