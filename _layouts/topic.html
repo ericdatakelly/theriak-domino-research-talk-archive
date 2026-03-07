@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Forums</a> &rsaquo;
+  <a href="{{ '/' | append: page.forum_slug | append: '/' | relative_url }}">{{ page.forum_name }}</a> &rsaquo;
+  {{ page.title }}
+</div>
+
+<article class="topic">
+  <h1>{{ page.title }}</h1>
+  <p class="topic-meta">
+    <span>{{ page.post_count }} post{% if page.post_count != 1 %}s{% endif %}</span>
+    &middot;
+    <span>Started {{ page.date | date: "%B %-d, %Y" }}</span>
+    &middot;
+    <a href="{{ page.original_url }}" rel="noopener">Original thread</a>
+  </p>
+
+  <div class="topic-content">
+    {{ content }}
+  </div>
+</article>
+
+<div class="topic-nav">
+  <a href="{{ '/' | append: page.forum_slug | append: '/' | relative_url }}">&larr; Back to {{ page.forum_name }}</a>
+</div>

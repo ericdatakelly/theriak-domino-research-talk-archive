@@ -1,0 +1,46 @@
+title: "Theriak-Domino Research Talk Archive"
+description: >
+  Archived forum discussions from research-talk.org, the community forum
+  for users of the Theriak-Domino thermodynamic calculation software.
+baseurl: "/theriak-domino-research-talk-archive"
+url: "https://ericdatakelly.github.io"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Exclude source/utility files from the built site
+exclude:
+  - "*.sh"
+  - "*.py"
+  - "db/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "vendor/"
+
+# Forum metadata (used by templates)
+forums:
+  - slug: general-discussion
+    name: General Discussion
+    description: Topics that do not fit into the other categories
+  - slug: installation-and-operation
+    name: Installation and Operation
+    description: Help with installing and operating the software, including errors and unexpected results.
+  - slug: dataset-discussion
+    name: Dataset Discussion
+    description: Topics related to datasets, including dataset construction and best practices, and announcements of new datasets or solution models.
+  - slug: administrator-announcements
+    name: Administrator Announcements
+    description: Announcements from the administrators and moderators of the forum.

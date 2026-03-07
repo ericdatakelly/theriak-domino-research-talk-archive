@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Forums</a> &rsaquo; {{ page.forum_name }}
+</div>
+
+<h1>{{ page.forum_name }}</h1>
+<p class="forum-description">{{ page.forum_description }}</p>
+
+<table class="topic-list sortable">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Posts</th>
+      <th>Started</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign topics = site.pages
+       | where: "forum_slug", page.forum_slug
+       | where_exp: "p", "p.layout == 'topic'"
+       | sort: "date" | reverse %}
+    {% for topic in topics %}
+    <tr>
+      <td><a href="{{ topic.url | relative_url }}">{{ topic.title }}</a></td>
+      <td>{{ topic.post_count }}</td>
+      <td>{{ topic.date | date: "%Y-%m-%d" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
