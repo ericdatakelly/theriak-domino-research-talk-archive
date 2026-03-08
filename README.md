@@ -1,6 +1,6 @@
 # Theriak-Domino Research Talk Archive
 
-A static archive of [research-talk.org](https://research-talk.org), the community forum for users of the [Theriak-Domino](https://dtinkham.net/peq.html) thermodynamic calculation software.
+A static archive of [research-talk.org](https://research-talk.org), the community forum for users of the [Theriak-Domino](https://titan.minpet.unibas.ch/minpet/theriak/theruser.html) thermodynamic calculation software.
 
 **Live site:** https://ericdatakelly.github.io/theriak-domino-research-talk-archive/
 

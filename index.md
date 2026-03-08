@@ -7,7 +7,7 @@ title: Forum Archive
   This is a read-only archive of the <strong>Research-Talk</strong> forum, originally hosted at
   <a href="https://research-talk.org">research-talk.org</a>.
   The forum was a community space for users of the
-  <a href="https://serc.carleton.edu/research_education/equilibria/theriak-domino.html">Theriak-Domino</a>
+  <a href="https://titan.minpet.unibas.ch/minpet/theriak/theruser.html">Theriak-Domino</a>
   thermodynamic calculation software.
 </div>
 
